@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100hv;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.user-profile{
+    background-color: #dcdcdc;
+    margin-top: 6%;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: rgba(red, green, blue, alpha);
+}
+
+.profile-top{
+    background: linear-gradient(to right, #8e2de2, #4a4a4a);
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.profile-top img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.profile-top .profile-info{
+    margin-top: 1rem;
+}
+
+.profile-bottom{
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+button{
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    padding: 1rem; 
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25);
+    transition: 0.5s ease;
+}
+
+button:hover{
+    background: linear-gradient(to right, #8e2de2, #4a4a4a);
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+    width: 500px;
+}
+
+ul li{
+    width: 100%;
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: -3px 6px 4px #222;
+}
+
+ul li span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    text-align: center;
+    background: #e00;
+}
